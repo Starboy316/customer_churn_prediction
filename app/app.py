@@ -6,8 +6,8 @@ import os
 
 # --- Setup Paths ---
 base_path = os.path.abspath(os.path.dirname(__file__))
-model_path = os.path.abspath(os.path.join(base_path, '..', 'model', 'churn_rf_model.pkl'))
-features_path = os.path.abspath(os.path.join(base_path, '..', 'model', 'feature_columns.pkl'))
+model_path = os.path.join(base_path, 'churn_rf_model.pkl')
+features_path = os.path.join(base_path, 'feature_columns.pkl')
 
 # --- Check if files exist ---
 if not os.path.exists(model_path):
